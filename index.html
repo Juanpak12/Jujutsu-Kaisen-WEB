@@ -223,8 +223,11 @@ y envuelve todo el contenido de la página, excepto el pie de página en este ej
       <!-- Inspiration -->
       <div class="w3-white w3-margin">
         <div class="w3-container w3-padding w3-black">
-          <h4>Inspiration</h4>
+          <h3>Pelicula</h3>
+          <h4>Jujutsu Kaisen Cero<br><em>呪術廻戦 零</em></h4>
         </div>
+        <!-- dejaremos esto como comentario la creacion de la seccion con 2 columnas-->
+        <!--
         <div class="w3-row-padding w3-white">
           <div class="w3-col s6">
             <p><img src="img/MLR_Ecchan.webp" alt="Jeans" style="width:100%"></p>
@@ -235,6 +238,14 @@ y envuelve todo el contenido de la página, excepto el pie de página en este ej
             <p><img src="img/MLR_Narugami.webp" alt="Jeans" style="width:100%"></p>
          </div>
         </div>
+        -->
+        <!-- creamos una seccion mas pequeña para agregar una sola imagen y hacerla mas sencilla-->
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s12">
+            <p><img src="img/Jujutsu_Kaisen_0_The_Movie.webp" alt="Imagen Jujutsu Kaisen Cero" style="width:100%"></p>
+          </div>
+        </div>
+
       </div>
       <hr>
 
@@ -253,15 +264,24 @@ y envuelve todo el contenido de la página, excepto el pie de página en este ej
       </div>
       <hr>
       
-      <!-- Subscribe -->
+      <!-- Suscribete -->
       <div class="w3-white w3-margin">
         <div class="w3-container w3-padding w3-black">
-          <h4>Subscribe</h4>
+          <h4>Suscríbete</h4>
+        
+          <!--video de subscribe-->
+          <!--
+          <video width="100%" controls>
+            <source src="img/boton-Suscribite.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+          </video>
+          -->
+
         </div>
         <div class="w3-container w3-white">
-          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+          <p>Ingrese su correo electrónico a continuación y reciba notificaciones sobre las últimas publicaciones del blog.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Ingrese su correo electrónico" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Suscríbete</button></p>
         </div>
       </div>
 
@@ -274,15 +294,16 @@ y envuelve todo el contenido de la página, excepto el pie de página en este ej
 <!-- END w3-content -->
 </div>
 
+<!-- se modifica idioma-->
 <!-- Subscribe Modal -->
 <div id="subscribe" class="w3-modal w3-animate-opacity">
   <div class="w3-modal-content" style="padding:32px">
     <div class="w3-container w3-white">
       <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
-      <h2 class="w3-wide">SUBSCRIBE</h2>
-      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+      <h2 class="w3-wide">SUSCRÍBETE</h2>
+      <p>Únase a la lista de correos para recibir actualizaciones sobre las últimas publicaciones del blog y otras cosas.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Ingrese su correo electrónico"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Suscríbete</button>
     </div>
   </div>
 </div>
